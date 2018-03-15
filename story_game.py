@@ -34,7 +34,10 @@ while loop ==1:
         loop=2
     else:
         loop==1
-        print("Please enter one of the choices. Enter it exactly") 
+        print("")
+        print("")
+        print("Please enter one of the choices. Enter it exactly")
+        print("")
 
 
 while loop ==2:
@@ -97,7 +100,10 @@ while loop ==2:
                 print("You had no choice but to move on.")
                 loop=4
             else:
+                print("")
+                print("")
                 print("Please enter one of the choices. Enter it exactly.")
+                print("")
             
             
     elif second.lower()==("move on"):
@@ -107,6 +113,8 @@ while loop ==2:
         print("You had a slow reacion and you fell into the hole")
         loop=5
     else:
+        print("")
+        print("")
         print("Please enter one of the choices. Enter it exactly.")
         loop=2
         
