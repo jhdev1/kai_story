@@ -197,7 +197,7 @@ while loop==4:
             loop = 4
             clear_screen()
             
-    if four. lower()=="snake":
+    if four.lower()=="snake":
         print("The snake grew larger, ate you, and killed you.")
         diessss = input("Do you want to continue y/n")
         if diessss.lower()=="n":
