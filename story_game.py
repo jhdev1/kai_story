@@ -240,7 +240,7 @@ while loop==5:
         if die.lower()==("y"):
             loop = 5
             clear_screen()
-        
+            print("Your soul possesed another wize adventurer.")        
     
         
     
