@@ -13,27 +13,27 @@ while loop ==1:
     print("")
     first = input("What do you do? Do you take snake or take potion ")
     print("")
-    if first.lower() == ("take potion"):
+    if first.lower() == "take potion":
         print("The statue moves and squishes you.")
         print("")
         die = input("Do you want to continue y/n")
         
-        if die.lower()==("n"):
+        if die.lower()=="n":
             quit(1)
-        if die.lower()==("y"):
+        if die.lower()=="y":
             loop=1
             clear_screen()
             print("Your soul possesed another adventurer and you go in front of the cave.")
             print("")
             
-    elif first.lower() == ("take snake"):
+    elif first.lower() == "take snake":
         print("You chose wisely and you move on into a cave that opened in front of you.")
         print("")
         print("")
         print("")
         loop=2
     else:
-        loop==1
+        loop=1
         print("")
         print("")
         print("Please enter one of the choices. Enter it exactly")
@@ -51,13 +51,13 @@ while loop ==2:
     print("")
     second=input("What do you do? Do you take gun, take knife, move on, or take torch")
     
-    if second.lower() == ("take gun"):
+    if second.lower() == "take gun":
         print("")
         print("As you take it, the other things sink into the wall and the floor moves forward.")
         print("")
         print("Out of the dark, something lunges at you and kills you.")
         print("")
-    elif second.lower()==("take knife"):
+    elif second.lower()=="take knife":
         print("")
         print("As you take it, the other things sink into the wall and the floor moves forward.")
         print("")
@@ -65,16 +65,16 @@ while loop ==2:
         print("")    
         dies = input("Do you want to continue y/n")
         
-        if dies.lower()==("n"):
+        if dies.lower()=="n":
             quit(1)
-        if dies.lower()==("y"):
+        if dies.lower()=="y":
             loop = 2
             clear_screen()
             print("")
             print("Your soul possesed another wise adventurer and you enter the cave")
             print("")
             
-    elif second.lower()== ("take torch"):
+    elif second.lower()== "take torch":
         print("As you take it the other things sink into the wall and the floor moves forward.")
         print("")
         print("Using the light of a torch, you see a hairy beast come at you and you quickly use the torch to burn it to ashes.")
@@ -87,13 +87,13 @@ while loop ==2:
         
         while loop == 2:
             path = input("Which way will you go,right or left")
-            if path.lower()==("right"):
+            if path.lower()=="right":
                 print("")
                 print("As you enter the right path, a wall closes the way back.")
                 print("")
                 print("You had no choice but to move on.")
                 loop=3
-            elif path.lower()==("left"):
+            elif path.lower()=="left":
                 print("")
                 print("As you enter the left path, a wall closes the way back.")
                 print("")
@@ -106,7 +106,7 @@ while loop ==2:
                 print("")
             
             
-    elif second.lower()==("move on"):
+    elif second.lower()=="move on":
         print("")
         print("You move on and realized there was a huge hole in front of you.")
         print("")
@@ -135,26 +135,27 @@ while loop==3:
     print("They are a turtle, a snail, and a elaphant.")
     print("")
     three=input("Which do you choose? Turtle, snail, or elaphant?")
-    if three.lower==("turtle"):
+    if three.lower()=="turtle":
         print("")
         print("The door slides open, but there is a door behind it.")
         print("")
-        loop==4
-    if three.lower==("snail"):
+        loop=4
+        
+    if three.lower()=="snail":
         print("The snail morphed into a wolf and killed you.")
         dies = input("Do you want to continue y/n")
-        if dies.lower()==("n"):
+        if dies.lower()=="n":
             quit(1)
-        if dies.lower()==("y"):
+        if dies.lower()=="y":
             loop = 3
             clear_screen()
          
-    if three.lower==("elephant"):
+    if three.lower=="elephant":
         print("The elaphant morphed into a fox and killed you.")
-        dies = input("Do you want to continue y/n")
-        if dies.lower()==("n"):
+        diess = input("Do you want to continue y/n")
+        if diess.lower()=="n":
             quit(1)
-        if dies.lower()==("y"):
+        if diess.lower()=="y":
             loop = 3
             clear_screen()
     else:
@@ -172,36 +173,36 @@ while loop==4:
     print("")
         
     four=input("Which do you choose? horse, lion, rino, or snake?")
-    if four.lower==("horse"):
+    if four.lower()=="horse":
         print("The horse morphed into a scorpion and killed you.")
         print("")
         diess = input("Do you want to continue y/n")
-        if diess.lower()==("n"):
+        if diess.lower()=="n":
             quit(1)
-        if diess.lower()==("y"):
+        if diess.lower()=="y":
             loop = 4
             clear_screen()
             
-    if four.lower==("lion"):
+    if four.lower()=="lion":
         print("The second door slid open, but there was one more behind it.")
         print("")
         loop=5
 
-    if four.lower==("rino"):
+    if four.lower()=="rino":
         print("The rino got angry, rammed into you, and killed you.")
         diesss = input("Do you want to continue y/n")
-        if diesss.lower()==("n"):
+        if diesss.lower()=="n":
             quit(1)
-        if diesss.lower()==("y"):
+        if diesss.lower()=="y":
             loop = 4
             clear_screen()
             
-    if four. lower==("snake"):
+    if four. lower()=="snake":
         print("The snake grew larger, ate you, and killed you.")
         diessss = input("Do you want to continue y/n")
-        if diessss.lower()==("n"):
+        if diessss.lower()=="n":
             quit(1)
-        if diessss.lower()==("y"):
+        if diessss.lower()=="y":
             loop = 4
             clear_screen()    
 
@@ -220,7 +221,7 @@ while loop==5:
     print("Suddenly five foods popped up. It was a cake, a muffin, a pancake, a steak, and pork.")
     print("")
     five = input("Which do you eat? Cake,  muffin,  pancake,  steak, or pork.")
-    if five.lower==("pancake"):
+    if five.lower()=="pancake":
         print("The last door opened and you walk into a bright shiny room filled with crystals.")
         print("")
         print("In the middle of the room was one piece of a very old artifact. It seemed to be missing two pieces.")
@@ -235,9 +236,9 @@ while loop==5:
     else:
         ("This food is poisened and you died.")
         die = input("Do you want to continue y/n")
-        if die.lower()==("n"):
+        if die.lower()=="n":
             quit(1)
-        if die.lower()==("y"):
+        if die.lower()=="y":
             loop = 5
             clear_screen()
             print("Your soul possesed another wize adventurer.")        
