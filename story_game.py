@@ -234,7 +234,7 @@ while loop==5:
         print("")
 
     else:
-        ("This food is poisened and you died.")
+        print("This food is poisened and you died.")
         die = input("Do you want to continue y/n")
         if die.lower()=="n":
             quit(1)
