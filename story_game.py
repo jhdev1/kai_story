@@ -1,10 +1,9 @@
-import string
-import os
+
 loop = 1
 def clear_screen():
     print("\n"*2)
     
-while loop ==1:
+while loop == 1:
     print("You are standing in front of a huge statue that is holding one thing in each hand.")
     print("")
     print("In one hand it was holding a potion of immortality and in the other hand, it was holding a snake.")
@@ -18,9 +17,9 @@ while loop ==1:
         print("")
         die = input("Do you want to continue y/n")
         
-        if die.lower()=="n":
+        if die.lower() == "n":
             quit(1)
-        if die.lower()=="y":
+        if die.lower() == "y":
             loop=1
             clear_screen()
             print("Your soul possesed another adventurer and you go in front of the cave.")
@@ -106,7 +105,7 @@ while loop ==2:
                 print("")
             
             
-    elif second.lower()=="move on":
+    elif second.lower() == "move on":
         print("")
         print("You move on and realized there was a huge hole in front of you.")
         print("")
@@ -134,28 +133,30 @@ while loop==3:
     print("")
     print("They are a turtle, a snail, and a elaphant.")
     print("")
-    three=input("Which do you choose? Turtle, snail, or elaphant?")
-    if three.lower()=="turtle":
+
+    three = input("Which do you choose? Turtle, snail, or elephant?")
+
+    if three.lower() == "turtle":
         print("")
         print("The door slides open, but there is a door behind it.")
         print("")
         loop=4
         
-    if three.lower()=="snail":
+    elif three.lower() == "snail":
         print("The snail morphed into a wolf and killed you.")
         dies = input("Do you want to continue y/n")
-        if dies.lower()=="n":
+        if dies.lower() == "n":
             quit(1)
-        if dies.lower()=="y":
+        if dies.lower() == "y":
             loop = 3
             clear_screen()
          
-    if three.lower=="elephant":
-        print("The elaphant morphed into a fox and killed you.")
+    elif three.lower() == "elephant":
+        print("The elephant morphed into a fox and killed you.")
         diess = input("Do you want to continue y/n")
-        if diess.lower()=="n":
+        if diess.lower() == "n":
             quit(1)
-        if diess.lower()=="y":
+        if diess.lower() == "y":
             loop = 3
             clear_screen()
     else:
