@@ -55,13 +55,25 @@ while loop ==2:
         print("As you take it, the other things sink into the wall and the floor moves forward.")
         print("")
         print("Out of the dark, something lunges at you and kills you.")
-        print("")
+        print("") 
+        dies = input("Do you want to continue y/n")
+        
+        if dies.lower()=="n":
+            quit(1)
+        if dies.lower()=="y":
+            loop = 2
+            clear_screen()
+            print("")
+            print("Your soul possesed another wise adventurer and you enter the cave")
+            print("")
+            
     elif second.lower()=="take knife":
         print("")
         print("As you take it, the other things sink into the wall and the floor moves forward.")
         print("")
         print("Out of the dark, something lunges at you and kills you.")
-        print("")    
+        print("")
+        
         dies = input("Do you want to continue y/n")
         
         if dies.lower()=="n":
@@ -184,12 +196,14 @@ while loop==4:
             loop = 4
             clear_screen()
             
-    if four.lower()=="lion":
+    elif four.lower()=="lion":
+        print("")
         print("The second door slid open, but there was one more behind it.")
         print("")
         loop=5
 
-    if four.lower()=="rino":
+    elif four.lower()=="rino":
+        print("")
         print("The rino got angry, rammed into you, and killed you.")
         diesss = input("Do you want to continue y/n")
         if diesss.lower()=="n":
@@ -198,7 +212,8 @@ while loop==4:
             loop = 4
             clear_screen()
             
-    if four.lower()=="snake":
+    elif four.lower()=="snake":
+        print("")
         print("The snake grew larger, ate you, and killed you.")
         diessss = input("Do you want to continue y/n")
         if diessss.lower()=="n":
@@ -211,16 +226,18 @@ while loop==4:
         print("")
         print("")
         print("Please enter one of the choices. Enter it exactly.")
+        print("")
         loop=4
             
 
 while loop==5:
-    print("The third riddle is: I am a food, I am ood with syrup, and I can be made with a pan and a cake put together. What am I?")
+    print("The third riddle is: I am a food, I am good with syrup, and I can be made with a pan and a cake put together. What am I?")
     print("")
     print("You must at one food, beware if you eat the wrong one, it will be poisened.")
     print("")
     print("Suddenly five foods popped up. It was a cake, a muffin, a pancake, a steak, and pork.")
     print("")
+    
     five = input("Which do you eat? Cake,  muffin,  pancake,  steak, or pork.")
     if five.lower()=="pancake":
         print("The last door opened and you walk into a bright shiny room filled with crystals.")
@@ -233,8 +250,9 @@ while loop==5:
         print("")
         print("Now you shall continue your journy to find the other two pieces.")
         print("")
-
-    else:
+        break
+        
+    elif five.lower()== "cake":
         print("This food is poisened and you died.")
         die = input("Do you want to continue y/n")
         if die.lower()=="n":
@@ -242,7 +260,44 @@ while loop==5:
         if die.lower()=="y":
             loop = 5
             clear_screen()
-            print("Your soul possesed another wize adventurer.")        
+            print("Your soul possesed another wise adventurer.")
+             
+    elif five.lower() == "steak":
+        print("This food is poisened and you died.")
+        die = input("Do you want to continue y/n")
+        if die.lower()=="n":
+            quit(1)
+        if die.lower()=="y":
+            loop = 5
+            clear_screen()
+            print("Your soul possesed another wise adventurer.")
+
+            
+    elif five.lower() == "pork":
+        print("This food is poisened and you died.")
+        die = input("Do you want to continue y/n")
+        if die.lower()=="n":
+            quit(1)
+        if die.lower()=="y":
+            loop = 5
+            clear_screen()
+            print("Your soul possesed another wise adventurer.")
+
+    elif five.lower() == "steak":
+        print("This food is poisened and you died.")
+        die = input("Do you want to continue y/n")
+        if die.lower()=="n":
+            quit(1)
+        if die.lower()=="y":
+            loop = 5
+            clear_screen()
+            print("Your soul possesed another wise adventurer.") 
+
+    else:
+        clear_screen()
+        loop = 5
+        print("Please enter one of the choices. Enter it exactly.")
+     
     
         
     
